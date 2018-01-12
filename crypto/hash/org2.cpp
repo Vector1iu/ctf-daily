@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <openssl/md5.h>
-
+//发送给服务器的密码是
+//               ""adminadmin""
+//               "\x80\x00\x00\x00\x00\x00\x00\x00"
+//               "\x00\x00\x00\x00\x00\x00\x00\x00"
+//               "\x00\x00\x00\x00\x00\x00\x00\x00"
+//               "\x00\x00\x00\x00\x00\x00\x00\xC8"
+//               "\x00\x00\x00\x00\x00\x00\x00"
+//               ""J$ST""
 int main(int argc,const char* argv[])
 {
     MD5_CTX c;

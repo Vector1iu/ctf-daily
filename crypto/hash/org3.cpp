@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <openssl/md5.h>
 #include <arpa/inet.h>
+
+//这里是本地生成hash值(本题目中是getmein)
+
 int main(int argc,const char* argv[])
 {
     MD5_CTX c;
